@@ -1,41 +1,118 @@
-# How to Add My Next Case Study
+# Next Case Study — Lukman Modibbo Said
 
-## Where the Next Case Study Will Go
+## Where It Goes
 
-The next case study will be added to the **Projects/Case Studies section** of my existing portfolio. It will follow the same visual style, structure, and identity already established in the portfolio.
+This case study will be added to my portfolio as a new entry directly beneath
+the existing Accessibility Playground case. It lives in this repository under
+the Case Studies section of `README.md`, as a new `###` block.
 
-## How I Will Add a New Case Study
+---
 
-For each new case study, I will use the same three-part structure:
+## How to Add a Case Study — Exact Steps
 
-### 1. Problem
+1. Open `README.md` in this repository.
+2. Copy the three-beat block from the Accessibility Playground case study.
+3. Paste it as a new `###` section under **Case Studies**.
+4. Fill in the three beats below — no invented details, only what actually happened.
+5. Update the **Up Next** section to the following planned project.
+6. Save, then commit:
+   ```
+   git add README.md
+   git commit -m "portfolio: add [project name] case study"
+   git push
+   ```
 
-Describe the problem, challenge, or user need that the project was created to solve.
+**Shortcut:** Open the existing Claude Project, paste rough notes from the project,
+and ask: *"Shape this into my three-beat case study format, matching my existing voice."*
+First draft is one conversation. No rebuilding context from scratch.
 
-### 2. What I Did
+---
 
-Explain my role in the project, including the technical work I carried out, the tools and technologies I used, important decisions I made, and any challenges I solved.
+## Three-Beat Structure
 
-### 3. What Came of It
+Every case study follows this exact shape:
 
-Explain the outcome of the work, including improvements, results, lessons learned, or the value the project provided.
+### Problem
+What was broken, slow, missing, or unknown before the work started.
+One to three sentences. Specific, not general.
 
-I will also include relevant screenshots, project links, or a live demo where appropriate.
+### What I Did
+The concrete technical work: decisions made, tools used, problems solved.
+Not "I built a thing" — what exactly, and how.
 
-## Next Piece of Work
+### What Came Of It
+The outcome: what works now that did not work before, what I can do now
+that I could not do before. Only real results. Mark unknowns clearly.
 
-**SAFRECORD Student Score Pagination**
+---
 
-This will be my next portfolio case study because it represents real frontend development work involving React, TypeScript, API integration, pagination, and handling large amounts of student score data.
+## Next Case Study — SAFRECORD Student Score Pagination
 
-## Reminder
+### Problem
 
-I will set a calendar reminder to add the SAFRECORD Student Score Pagination case study to my portfolio.
+The SAFRECORD application needed to display student score records for schools
+managing large student populations. Loading all records at once was not viable —
+the interface became slow and difficult to navigate. The application needed
+server-side pagination so that teachers and administrators could page through
+score data reliably without performance degrading as record counts grew.
 
-**Reminder:** Add SAFRECORD Student Score Pagination case study to portfolio
-**Date:** September 21, 2026
-**Time:** 6:00 PM
+### What I Did
 
-## Existing Claude Project
+I built the pagination feature on the frontend using React and TypeScript.
+The work included:
 
-I will continue using my existing Claude Project when creating the case study. This preserves my established portfolio voice, frontend stack, design direction, and identity kit, allowing future case studies to be added without rebuilding the portfolio context from scratch.
+- Managing pagination state — current page, page size, and total record count
+- Integrating with the API using RTK Query, passing correct `offset` and `limit`
+  parameters on each page change
+- Rendering paginated score data and updating the view correctly as the user
+  navigated between pages
+- Handling edge cases, including the final page returning fewer records than
+  the configured page size
+
+> **[ Fill in ]** Any specific numbers you can honestly include — record volume,
+> page size chosen, or observable performance improvement. Do not invent these.
+
+### What Came Of It
+
+The application could handle large student populations without the interface
+degrading. Teachers and administrators could navigate score records page by page
+in a predictable, reliable way.
+
+> **[ Fill in ]** Any concrete outcome you observed — e.g. which schools or
+> user groups benefited, whether it shipped in a specific sprint, or any
+> feedback received after release. Only add what is true.
+
+---
+
+## Reminder — To Be Set by Me
+
+```
+Title:       Add SAFRECORD Pagination case study to portfolio
+Date:        Sunday, 21 September 2026
+Time:        18:00 (6:00 PM)
+Description: Write up the SAFRECORD Student Score Pagination case study using
+             the three-beat format and add it to README.md in this repository.
+             Open the existing Claude Project and paste rough notes to get a
+             first draft quickly.
+Repeat:      Does not repeat
+```
+
+> **Action required:** Create this event in Google Calendar or your preferred
+> calendar app. Take a screenshot once it is saved, showing the title, date,
+> and time clearly. That screenshot is the submission evidence for this assignment.
+
+---
+
+## Existing Claude Project — Preserved
+
+I am keeping the existing Claude Project used throughout this program. It holds:
+
+- My established voice and tone across all portfolio deliverables
+- My frontend stack: React, TypeScript, RTK Query, Tailwind CSS, Vite,
+  Styled Components, HTML/CSS
+- My professional identity as a frontend developer at FlexiSAF EduSoft / Safrecord
+- The full context of the Accessibility Playground case study
+
+When I am ready to write the SAFRECORD case, I will open that same Claude Project,
+paste my rough notes, and ask it to shape them into the three-beat format.
+I will not delete it, replace it, or start a new one.
